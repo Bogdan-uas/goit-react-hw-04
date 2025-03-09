@@ -5,3 +5,7 @@
     line-height: 1.11;
     text-transform: capitalize;
 }
+
+.empty-text {
+    text-align: center;
+}

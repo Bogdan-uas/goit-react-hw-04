@@ -1,14 +1,17 @@
 import style from './ImageGallery.module.css'
 import ImageCard from '../ImageCard/ImageCard.jsx'
 
-export default function ImageGallery({gallery, items:{ link, name, likes, author } }) {
+
+export default function ImageGallery({ pictures, openModal }) {
+    return (
     <ul className={style.gallery}>
-    {gallery.map((galleries) => {
-        return (
-            <li key={galleries.id}>
-                <ImageCard link={link} name={name} likes={likes} author={author}/>
-            </li>
-        )
-    })}
-</ul>
+        {pictures.map((pic) => {
+            return (
+                <li key={pic.id} className={style.item}>
+                    <ImageCard image={pic} openModal={openModal} />
+                </li>
+            )
+        })}
+    </ul>
+    )
 }

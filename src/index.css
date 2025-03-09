@@ -9,6 +9,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 64px;
+  width: 100%;
+}
+
 body {
   margin: 0;
   display: flex;
