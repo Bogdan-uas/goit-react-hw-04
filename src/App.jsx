@@ -32,7 +32,6 @@ function App() {
     }
     const handleSearch = async () => {
       try {
-        setPictures([]);
         setError(false);
         setLoading(true);
         const data = await fetchGalleryPicturesFromTopic(query, page);

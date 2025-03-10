@@ -14,10 +14,6 @@
     transition: 1000ms ease-in-out;
 }
 
-.img:hover {
-    height: 230px;
-}
-
 .text_container {
     display: flex;
     align-items: center;
